@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MovementGH/SmartPot#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express.js": "^1.0.0"
   }
 }
