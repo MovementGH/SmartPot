@@ -7,6 +7,8 @@ import { Routes, Route } from 'react-router-dom';
 import { UserContext } from './Contexts/User';
 import Request from './Tools/Request';
 
+import Home from './Routes/Home';
+
 class App extends React.Component {
   
   constructor(props) {
@@ -27,7 +29,7 @@ class App extends React.Component {
           <div className="d-flex flex-column" style={{overflow:"hidden",minHeight:"100vh"}}>
             <Routes>
 
-              <Route path="/" element = {<p>Main Page</p>}/>
+              <Route path="/" element = {<Home/>}/>
 
             </Routes>
           </div>

@@ -10,7 +10,8 @@ let Pots = [
         viewers: [],
         
         hardware: {
-            version: 1
+            version: 1,
+            moistureLevel: .1
         }
     }
 ]
@@ -24,8 +25,8 @@ let Plants = [
     {
         id: 1,
         name: 'Carrot',
-        minWater: .2,
-        maxWater: .4,
+        minMoisture: .2,
+        maxMoisture: .4,
         image: '',
     }
 ]
