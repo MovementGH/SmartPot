@@ -1,0 +1,22 @@
+{
+  "name": "smartpot-cloud",
+  "version": "1.0.0",
+  "description": "Cloud Software for smartpot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MovementGH/SmartPot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MovementGH/SmartPot/issues"
+  },
+  "homepage": "https://github.com/MovementGH/SmartPot#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+services:
+  smartpot:
+    container_name: "SmartPot"
+    build: .
+    ports:
+      - "8123:80"
