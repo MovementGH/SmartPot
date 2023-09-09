@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "8123:80"
+    volumes:
+      - ./data:/data
+    environment:
+      - SAVE_LOC=/data
+      - SAVE_INTERVAL=5000
