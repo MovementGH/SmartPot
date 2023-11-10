@@ -1,9 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import '@sweetalert2/theme-dark/dark.min.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
+import OneSignal from 'react-onesignal';
+import Request from './Tools/Request';
+import Config from './Config.json';
+
+OneSignal.init({
+  appId: Config.ONESIGNAL_ID
+}).then(()=>{
+  Request.CacheableRequest('GET','user').then(Result=>{
+    OneSignal.login(''+Result.Body.id);
+  })
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

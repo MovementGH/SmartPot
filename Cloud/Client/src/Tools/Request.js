@@ -15,7 +15,7 @@ function HTTP(Method,URL,Body,Headers) {
 }
 
 function NonCacheableRequest(Method,Endpoint,Body) {
-    return HTTP(Method,(process.env.REACT_APP_HOST_API || '')+'api/'+Endpoint,Body);
+    return HTTP(Method,(process.env.REACT_APP_HOST_API || '')+'api/client/'+Endpoint,Body);
 }
 
 let APICache=[];

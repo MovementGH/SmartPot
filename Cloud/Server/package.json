@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/MovementGH/SmartPot#readme",
   "dependencies": {
+    "@onesignal/node-onesignal": "^2.0.1-beta2",
     "cors": "^2.8.5",
-    "express.js": "^1.0.0"
+    "express.js": "^1.0.0",
+    "onesignal-node": "^3.4.0"
   }
 }

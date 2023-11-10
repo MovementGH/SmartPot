@@ -2,10 +2,16 @@ services:
   smartpot:
     container_name: "SmartPot"
     build: .
+    dns:
+      - "1.1.1.1"
     ports:
       - "8123:80"
+      - "8124:8124/udp"
     volumes:
       - ./data:/data
     environment:
       - SAVE_LOC=/data
       - SAVE_INTERVAL=5000
+      - ONESIGNAL_ID=
+      - ONESIGNAL_KEY=
+      - UDP_PORT=8124
